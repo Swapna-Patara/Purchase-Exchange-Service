@@ -118,7 +118,7 @@ public class ExchangeRateServiceImpl implements IExchangeRateService {
      */
     private URI buildTreasuryApiUri(String country, String currency, int page, LocalDate purchaseDate) {
         return UriComponentsBuilder.fromUriString(props.getBaseUrl())
-                .queryParam("filter", String.format("country:eq:%s,currency:eq:%s,record_date:lt:%s", country, currency, purchaseDate))
+                .queryParam("filter", String.format("country:eq:%s,currency:eq:%s,record_date:lte:%s", country, currency, purchaseDate))
                 .queryParam("sort", "-record_date")
                 .queryParam("page[size]", props.getPageSize())
                 .queryParam("page[number]", page)
