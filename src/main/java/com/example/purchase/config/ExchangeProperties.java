@@ -14,6 +14,5 @@ public class ExchangeProperties {
     private String baseUrl;
     private int pageSize;
     private int maxMonths;
-    private int maxIterations;
 
  }
