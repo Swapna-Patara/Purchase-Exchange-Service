@@ -40,8 +40,9 @@ be returned stating the purchase cannot be converted to the target currency.
 mvn clean install
 
 ## Run the app
-### Local - Run the application using an environment file:
+### Run the application using an environment file:
 $env:ENV_FILE=".\opt\config\purchase.env.qa"
+
 docker compose up --build
 
 ### Higher environments / Production : 
