@@ -41,7 +41,8 @@ mvn clean install
 
 ## Run the app
 ### Local - Run the application using an environment file:
-docker compose --env-file opt/config/purchase.env up --build
+$env:ENV_FILE=".\opt\config\purchase.env.qa"
+docker compose up --build
 
 ### Higher environments / Production : 
 For production deployments, environment variables and secrets should not be stored in local files.
